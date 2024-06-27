@@ -42,8 +42,8 @@
     End Sub
 
     Private Sub endgame()
-        My.Computer.Audio.Stop()
         My.Computer.Audio.Play(My.Resources._error, AudioPlayMode.WaitToComplete)
+        My.Computer.Audio.Stop()
         Button1.Visible = True
         Label3.Visible = True
         RoadMover.Stop()
