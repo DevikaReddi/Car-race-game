@@ -42,10 +42,11 @@
     End Sub
 
     Private Sub endgame()
-        My.Computer.Audio.Play(My.Resources._error, AudioPlayMode.WaitToComplete)
-        My.Computer.Audio.Stop()
         Button1.Visible = True
         Label3.Visible = True
+        My.Computer.Audio.Play(My.Resources._error, AudioPlayMode.WaitToComplete)
+        My.Computer.Audio.Stop()
+
         RoadMover.Stop()
         RacerMover1.Stop()
         RacerMover2.Stop()
