@@ -3,7 +3,7 @@
     Dim road(7) As PictureBox
     Dim score As Integer = 0
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        speed = 7
+        speed = 6
         road(0) = PictureBox1
         road(1) = PictureBox2
         road(2) = PictureBox3
@@ -23,7 +23,7 @@
         Next
 
         If score > 5 Then
-            speed = ((score / 5) * 2) + 7
+            speed = ((score / 5) * 2) + 6
         End If
 
         Label1.Text = "SPEED " & speed

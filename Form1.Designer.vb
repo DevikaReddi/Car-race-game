@@ -156,40 +156,44 @@ Partial Class Form1
         ' 
         ' race2
         ' 
+        race2.BackColor = SystemColors.ControlDark
         race2.Image = CType(resources.GetObject("race2.Image"), Image)
-        race2.Location = New Point(42, 318)
+        race2.Location = New Point(42, 386)
         race2.Name = "race2"
-        race2.Size = New Size(62, 133)
+        race2.Size = New Size(69, 144)
         race2.SizeMode = PictureBoxSizeMode.Zoom
         race2.TabIndex = 10
         race2.TabStop = False
         ' 
         ' race3
         ' 
+        race3.BackColor = SystemColors.ControlDark
         race3.Image = CType(resources.GetObject("race3.Image"), Image)
-        race3.Location = New Point(210, 90)
+        race3.Location = New Point(241, 45)
         race3.Name = "race3"
-        race3.Size = New Size(66, 133)
+        race3.Size = New Size(66, 137)
         race3.SizeMode = PictureBoxSizeMode.Zoom
         race3.TabIndex = 11
         race3.TabStop = False
         ' 
         ' race1
         ' 
-        race1.Image = CType(resources.GetObject("race1.Image"), Image)
-        race1.Location = New Point(385, 277)
+        race1.BackColor = SystemColors.ControlDark
+        race1.Image = My.Resources.Resources.car5
+        race1.Location = New Point(393, 274)
         race1.Name = "race1"
-        race1.Size = New Size(68, 136)
+        race1.Size = New Size(72, 145)
         race1.SizeMode = PictureBoxSizeMode.Zoom
         race1.TabIndex = 12
         race1.TabStop = False
         ' 
         ' car
         ' 
-        car.Image = CType(resources.GetObject("car.Image"), Image)
-        car.Location = New Point(217, 543)
+        car.BackColor = Color.DarkGray
+        car.Image = My.Resources.Resources._9
+        car.Location = New Point(210, 529)
         car.Name = "car"
-        car.Size = New Size(59, 131)
+        car.Size = New Size(66, 145)
         car.SizeMode = PictureBoxSizeMode.Zoom
         car.TabIndex = 13
         car.TabStop = False
@@ -228,7 +232,7 @@ Partial Class Form1
         Label3.BackColor = SystemColors.ButtonHighlight
         Label3.Font = New Font("Cambria", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label3.ForeColor = Color.Red
-        Label3.Location = New Point(86, 277)
+        Label3.Location = New Point(85, 274)
         Label3.Name = "Label3"
         Label3.Size = New Size(334, 65)
         Label3.TabIndex = 14
