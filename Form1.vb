@@ -5,7 +5,7 @@
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         My.Computer.Audio.Play(My.Resources.racing, AudioPlayMode.BackgroundLoop)
 
-        speed = 6
+        speed = 7
         road(0) = PictureBox1
         road(1) = PictureBox2
         road(2) = PictureBox3
@@ -25,7 +25,7 @@
         Next
 
         If score > 5 Then
-            speed = ((score / 5) * 2) + 6
+            speed = ((score / 5) * 2) + 7
         End If
 
         Label1.Text = "SPEED " & speed

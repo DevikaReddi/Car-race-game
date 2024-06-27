@@ -136,7 +136,7 @@ Partial Class Form1
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Cambria", 14.1428576F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label1.ForeColor = SystemColors.ButtonHighlight
+        Label1.ForeColor = Color.MidnightBlue
         Label1.Location = New Point(8, 9)
         Label1.Name = "Label1"
         Label1.Size = New Size(142, 38)
@@ -147,7 +147,7 @@ Partial Class Form1
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Cambria", 14.1428576F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label2.ForeColor = SystemColors.ButtonHighlight
+        Label2.ForeColor = Color.MidnightBlue
         Label2.Location = New Point(347, 9)
         Label2.Name = "Label2"
         Label2.Size = New Size(144, 38)
@@ -169,7 +169,7 @@ Partial Class Form1
         ' 
         race3.BackColor = SystemColors.ControlDark
         race3.Image = CType(resources.GetObject("race3.Image"), Image)
-        race3.Location = New Point(241, 45)
+        race3.Location = New Point(399, 283)
         race3.Name = "race3"
         race3.Size = New Size(66, 137)
         race3.SizeMode = PictureBoxSizeMode.Zoom
@@ -180,9 +180,9 @@ Partial Class Form1
         ' 
         race1.BackColor = SystemColors.ControlDark
         race1.Image = My.Resources.Resources.car5
-        race1.Location = New Point(393, 274)
+        race1.Location = New Point(245, 46)
         race1.Name = "race1"
-        race1.Size = New Size(72, 145)
+        race1.Size = New Size(65, 149)
         race1.SizeMode = PictureBoxSizeMode.Zoom
         race1.TabIndex = 12
         race1.TabStop = False
