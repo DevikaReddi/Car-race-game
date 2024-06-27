@@ -28,6 +28,6 @@ Car Race Game is a VB.NET application that lets you race against the clock, dodg
 
 2. **Clone the Repository:**
    ```sh
-   git clone https://github.com/yourusername/car-race-challenge.git
+   git clone https://github.com/DevikaReddi/Car-race-game.git
 3. **Build and Run:**
    - Build and run the project using Visual Studio or VB.NET tools.
