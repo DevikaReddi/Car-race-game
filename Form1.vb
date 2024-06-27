@@ -3,6 +3,8 @@
     Dim road(7) As PictureBox
     Dim score As Integer = 0
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        My.Computer.Audio.Play(My.Resources.racing, AudioPlayMode.BackgroundLoop)
+
         speed = 6
         road(0) = PictureBox1
         road(1) = PictureBox2
@@ -40,6 +42,8 @@
     End Sub
 
     Private Sub endgame()
+        My.Computer.Audio.Stop()
+        My.Computer.Audio.Play(My.Resources._error, AudioPlayMode.WaitToComplete)
         Button1.Visible = True
         Label3.Visible = True
         RoadMover.Stop()
@@ -58,13 +62,13 @@
 
     Private Sub RightSide_Tick(sender As Object, e As EventArgs) Handles RightSide.Tick
         If (car.Location.X < 410) Then
-            car.Left += 5
+            car.Left += 3
         End If
     End Sub
 
     Private Sub LeftSide_Tick(sender As Object, e As EventArgs) Handles LeftSide.Tick
         If (car.Location.X > 0) Then
-            car.Left -= 5
+            car.Left -= 3
         End If
     End Sub
 

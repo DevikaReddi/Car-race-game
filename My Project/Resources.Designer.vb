@@ -101,6 +101,15 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property _error() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("error", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
         Friend ReadOnly Property car1() As System.Drawing.Bitmap
@@ -171,12 +180,39 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property error1() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("error1", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
         Friend ReadOnly Property ocnhf2c3() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("ocnhf2c3", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to .
+        '''</summary>
+        Friend ReadOnly Property race() As String
+            Get
+                Return ResourceManager.GetString("race", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property racing() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("racing", resourceCulture)
             End Get
         End Property
     End Module
